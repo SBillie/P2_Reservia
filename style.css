@@ -177,7 +177,7 @@
     height: 20px;
     border-radius: 25px;
     margin-right: 0.5%;
-    
+    color:#0065fc;   
 }
 
 /*section hébergements*/
@@ -488,7 +488,6 @@ height: 180px;
 .nolist {
     list-style-type:none;
     padding:5px 0;
-
 }
 
 .colorlien{
