@@ -188,6 +188,7 @@
     height: 750px;
     border-radius: 10px; 
     background-color:rgb(226, 224, 224);
+    padding-bottom: 20px;
     
 }
 
@@ -426,7 +427,6 @@ height: 180px;
     width: 450px;
 }
 
-
 .mgImg3{
     border-radius:20px;
     height: 25%;
@@ -434,7 +434,6 @@ height: 180px;
     margin-top: 30px;
     margin-right: 20px;
 }
-
 
 .mgImg4{
     border-radius:20px;
@@ -454,12 +453,44 @@ height: 180px;
     width: 100%;
     background-color: gray;
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    align-items: flex-start;
+    flex-direction: column;
+    flex:1 0 auto;
+    justify-content: center;
+    align-items:flex-start;
+    font-size: 20px;
+    padding: 20px 0 100px;
+}
+.footer{
+    flex-shrink: 0;
+    border-top:1px;
+    width: 100%;
 }
 
+.bloc{
+    width: 15%;
+    margin: 0 25px;
+}
 
+/*apropos*/
+.blocapropos h4
+.blocnosherbegements h4
+.blocassistance h4{
+    font-size:25px;
+    padding-bottom: 20px;
+}
+
+.listeapropos 
+.listenoshebergements 
+.listeassistance{
+    list-style-type:none;
+}
+
+.nolist {
+    list-style-type:none;
+    padding:5px 0;
 
 }
 
+.colorlien{
+    color:black;
+}
