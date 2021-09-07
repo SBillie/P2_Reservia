@@ -444,21 +444,19 @@ height: 180px;
 
 }
 
-
-
-
 /*footer*/
 .contenu-footer{
     border-top:1px;
     width: 100%;
     background-color: gray;
     display: flex;
-    flex-direction: column;
+    
     flex:1 0 auto;
     justify-content: center;
     align-items:flex-start;
     font-size: 20px;
     padding: 20px 0 100px;
+    justify-content:space-between;
 }
 .footer{
     flex-shrink: 0;
@@ -471,13 +469,14 @@ height: 180px;
     margin: 0 25px;
 }
 
-/*apropos*/
 .blocapropos h4
 .blocnosherbegements h4
 .blocassistance h4{
     font-size:25px;
     padding-bottom: 20px;
 }
+
+
 
 .listeapropos 
 .listenoshebergements 
