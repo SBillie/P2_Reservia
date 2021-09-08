@@ -284,14 +284,12 @@
 
 .star{
     color: #0065fc;
-    border: none;
+   
 }
 
-.far{
-    color: red;
-}
+
 .color{
-    color: rgb(163, 157, 157);
+    color: #f2f2f2;
 }
 /*populaires*/
 .textepopulaires{
@@ -455,7 +453,7 @@ height: 180px;
 .contenu-footer{
     border-top:1px;
     width: 100%;
-    background-color: gray;
+    background-color: #f2f2f2;
     display: flex;
     
     flex:1 0 auto;
