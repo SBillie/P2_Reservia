@@ -281,12 +281,11 @@
 .textehébergements{
     font-weight: bold;
 }
-
+/*icônes étoiles*/
 .star{
     color: #0065fc;
-   
+    
 }
-
 
 .color{
     color: #f2f2f2;
@@ -345,110 +344,136 @@
 
 /*Activités à Marseille*/
 
+
+/*BlocImgActivtés*/
+
 .ActivitésMarseille{
-   margin-top: 50px;
-   margin-bottom: 50px;
-   height:100%;
-   width: 100%;
-}
-
-.Blocsimages{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height:100%;
     width: 100%;
-    height: 80%;
     background-color: rgb(145, 255, 0);
-    display: flex;
-    flex-direction: row;
+ }
+ 
+ .BlocsImgActivités{
+     width: 100%;
+     height: 80%;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .carrésactivités1{
+     width: 30%;
+     height:auto; ;
+     background-color:white;
+     padding: 1%;
+     border-radius: 20px;
+ }
+
+ .carrésactivités2{
+    width: 30%;
+    height:auto; ;
+    background-color:white;
+    padding: 1%;
+    border-radius: 20px;
 }
 
-.blocimages1{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    width:50%;
-    margin-right: 20px;
+.carrésactivités3{
+    width: 30%;
+    height:auto; ;
+    background-color:white;
+    padding: 1%;
+    border-radius: 20px;
+}
+.gdImage1{
+    background-image: url("images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 35%;
+    height: 160px;
 }
 
-.blocimages2{
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    margin-left: 20px;
+.MoyImage{
+    background-image: url("images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 35%;
+    height: 160px;
 }
 
-.AcitivitéGrandeImage{ 
-    display: flex;
-    margin-left: 20px;
+.MoyImage2{
+    background-image: url("images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 35%;
+    height: 160px;
 }
 
-.ActivitéPetiteImage{
-    display: flex;
-    margin-left: 20px;
-    flex-direction: column;
-    width:50%;
+/*BlocImgActivtés2*/
+
+.BlocsImgActivités2{
+     width: 100%;
+     height: 80%;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .gdImage1{
+    background-image: url("images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 35%;
+    height: 160px;
 }
 
-.blocImg{
-    width: 50%;
+.PteImage{
+    background-image: url("images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 35%;
+    height: 160px;
 }
 
-.gdImg{
-
-  height: 650px;
-  width: 98%;
-  object-fit: cover;
-  border-radius: 20px ;   
-  margin-top: 30px;
-  margin-bottom: 20px;
-    
+.PteImage{
+    background-image: url("images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 35%;
+    height: 160px;
 }
 
-.gdImg1{
-    height: 650px;
-  width: 110%;
-  object-fit: cover;
-  border-radius: 20px ;   
-  margin-top: 30px;
-  
+
+
+.carrésactivités1{
+    width: 30%;
+    height:auto; ;
+    background-color:white;
+    padding: 1%;
+    border-radius: 20px;
 }
 
-.mgImg{
-height: 180px;
-
+.carrésactivités4{
+    width: 30%;
+    height:auto; ;
+    background-color:white;
+    padding: 1%;
+    border-radius: 20px;
 }
 
-.mgImg1{
-    width: 70%;
-    height: 20%;
-    object-position: center;
-    object-fit: cover;
-    margin-top: 30px;
-    border-radius:20px;
-    margin-left:100px;
+
+.carrésactivités4{
+    width: 30%;
+    height:auto; ;
+    background-color:white;
+    padding: 1%;
+    border-radius: 20px;
 }
-
-.mgImg2{
-    border-radius:25px;
-    height: 25%;
-    width: 450px;
-}
-
-.mgImg3{
-    border-radius:20px;
-    height: 25%;
-    width: 400px;
-    margin-top: 30px;
-    margin-right: 20px;
-}
-
-.mgImg4{
-    border-radius:20px;
-    height: 25%;
-    width: 400px;
-    margin-right: 20px;
-    margin-top: 30px;
-
-}
-
 /*footer*/
 .contenu-footer{
     border-top:1px;
