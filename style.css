@@ -344,7 +344,6 @@
 
 /*Activités à Marseille*/
 
-
 /*BlocImgActivtés*/
 
 .ActivitésMarseille{
@@ -353,127 +352,112 @@
     height:100%;
     width: 100%;
     background-color: rgb(145, 255, 0);
+    display : flex;
+    flex-direction: column;
  }
- 
  .BlocsImgActivités{
-     width: 100%;
-     height: 80%;
-     display: flex;
-     flex-direction: row;
- }
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
 
- .carrésactivités1{
-     width: 30%;
-     height:auto; ;
-     background-color:white;
-     padding: 1%;
-     border-radius: 20px;
- }
+.blocdegauche{
 
- .carrésactivités2{
-    width: 30%;
-    height:auto; ;
+}
+
+.blocdedroite{
+
+}
+
+.blocdegauchecolonne{
+    display: flex;
+    flex-direction: column;
+}
+
+.blocdedroitecolonne{
+    display: flex;
+    flex-direction:row;
+}
+
+/*fondblancs*/
+.fondblanc{
+    object-fit: cover;
+    width: 23%;;
+    height:auto;
+    background-color:white;
+    padding: 1%;
+    border-radius: 20px;
+    
+}
+.fondblanc2{
+    width: 23%;;
+    height:auto;
+    background-color:white;
+    padding: 1%;
+    border-radius: 20px;
+
+}
+
+.fondblanc3{
+    width: 23%;;
+    height:auto;
+    background-color:white;
+    padding: 1%;
+    border-radius: 20px;
+
+}
+
+.fondblanc4{
+    width: 100%;
+    height:auto;
     background-color:white;
     padding: 1%;
     border-radius: 20px;
 }
 
-.carrésactivités3{
-    width: 30%;
-    height:auto; ;
-    background-color:white;
-    padding: 1%;
-    border-radius: 20px;
-}
-.gdImage1{
-    background-image: url("images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    width: 35%;
-    height: 160px;
-}
+/*dimensions images activités*/
 
-.MoyImage{
-    background-image: url("images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    width: 35%;
-    height: 160px;
+.grandeimage{
+    height: 650px;
+    width: 110%;
+    object-fit: cover;
+    border-radius: 20px ;   
+    margin-top: 30px;
+
+    display: flex;
+    
+    margin-left:3%;
+    margin-right: 3%;
 }
 
-.MoyImage2{
-    background-image: url("images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    width: 35%;
-    height: 160px;
+.moyimage{
+    height: 250px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px ;   
+    margin-top: 30px;
 }
 
-/*BlocImgActivtés2*/
-
-.BlocsImgActivités2{
-     width: 100%;
-     height: 80%;
-     display: flex;
-     flex-direction: row;
- }
-
- .gdImage1{
-    background-image: url("images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    width: 35%;
-    height: 160px;
+.moyimage2{
+    height: 250px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px ;   
+    margin-top: 30px;
 }
 
-.PteImage{
-    background-image: url("images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    width: 35%;
-    height: 160px;
-}
-
-.PteImage{
-    background-image: url("images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    width: 35%;
-    height: 160px;
+.petiteimage{
+    height: 250px;
+    width: 29%;
+    object-fit: cover;
+    border-radius: 20px ;   
+    margin-top: 30px;
 }
 
 
 
-.carrésactivités1{
-    width: 30%;
-    height:auto; ;
-    background-color:white;
-    padding: 1%;
-    border-radius: 20px;
-}
 
-.carrésactivités4{
-    width: 30%;
-    height:auto; ;
-    background-color:white;
-    padding: 1%;
-    border-radius: 20px;
-}
-
-
-.carrésactivités4{
-    width: 30%;
-    height:auto; ;
-    background-color:white;
-    padding: 1%;
-    border-radius: 20px;
-}
 /*footer*/
 .contenu-footer{
     border-top:1px;
