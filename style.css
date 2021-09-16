@@ -56,7 +56,7 @@
     border-top: 1px solid; color: blue;
 }
 
-;.bordurenav23{
+.bordurenav23{
     border-top: 1px solid transparent;
 }
 .sizeliens{
@@ -120,9 +120,12 @@
 /*filtres*/
 .filtres{
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
-
+.filtrecontainer{
+    display: flex;
+    margin-top: 3rem;
+}
 .margedesfiltres{
     margin-top: 50px;
     margin-bottom: 40px;
@@ -132,38 +135,95 @@
     margin-right: 20px;
 }
 
-.texticons{
-    border: 2px solid #f2f2f2;
-    height: 50px;
-    border-radius: 30px;
-    margin-right: 20px;
-    display: inline-block;
-    align-items: center;
-    
-}
-.btn{
-    color: blue;
-}
-
-.icon{
-    border-radius: 25px;
-    width: 30%;
-    height: 100%;
-    color: #0065fc;
-    background-color: #9fc0f1;
+.filter:hover {
+    transform: scale(1.02);
     cursor: pointer;
-    line-height: 3%;
+  }
 
-}
-
-.texticons:hover{
-    color: white;
+  .filtername:hover {
     background-color: #0065fc;
-    cursor: pointer;
-}
-.text{
-    color: black;
-}
+    color: white;
+  }
+  
+  .filter {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition-duration: 0.2s;
+  }
+  
+  .filtericons {
+    background-color: #deebff;
+    border-radius: 100%;
+    height: 3.2rem;
+    width: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    position: absolute;
+  }
+
+  .eco {
+    padding: 1rem 1rem 1rem 4rem;
+    border-top: #eeeeee solid 3px;
+    border-bottom: #eeeeee solid 3px;
+    border-left: none;
+    border-right: #eeeeee solid 3px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .fam {
+    padding: 1rem 1rem 1rem 4rem;
+    border-top: #eeeeee solid 3px;
+    border-bottom: #eeeeee solid 3px;
+    border-left: none;
+    border-right: #eeeeee solid 3px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .rom {
+    padding: 1rem 1rem 1rem 4rem;
+    border-top: #eeeeee solid 3px;
+    border-bottom: #eeeeee solid 3px;
+    border-left: none;
+    border-right: #eeeeee solid 3px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .ani {
+    padding: 1rem 1rem 1rem 4rem;
+    border-top: #eeeeee solid 3px;
+    border-bottom: #eeeeee solid 3px;
+    border-left: none;
+    border-right: #eeeeee solid 3px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: right;
+    width: max-content;
+  }
+  
+
 
 /*icône info*/
 .info {
@@ -351,7 +411,6 @@
     margin-bottom: 50px;
     height:100%;
     width: 100%;
-    background-color: rgb(145, 255, 0);
     display : flex;
     flex-direction: column;
  }
@@ -359,21 +418,18 @@
     width: 100%;
     height: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .blocdegauche{
-
+    display: flex;
+    
 }
 
 .blocdedroite{
-
-}
-
-.blocdegauchecolonne{
     display: flex;
-    flex-direction: column;
 }
+
 
 .blocdedroitecolonne{
     display: flex;
@@ -382,77 +438,85 @@
 
 /*fondblancs*/
 .fondblanc{
-    object-fit: cover;
-    width: 23%;;
-    height:auto;
-    background-color:white;
-    padding: 1%;
-    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 24rem;
+  transition-duration: 0.2s;
+  margin: 1%;
     
 }
 .fondblanc2{
-    width: 23%;;
-    height:auto;
-    background-color:white;
-    padding: 1%;
-    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 13rem;
+  width: 19rem;
+  flex-basis: 60%;
+  flex-grow: 1;
+  margin-bottom:4rem;
+  transition-duration: 0.2s;
 
 }
 
 .fondblanc3{
-    width: 23%;;
-    height:auto;
-    background-color:white;
-    padding: 1%;
-    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 15rem;
+  width: 30rem;
+  transition-duration: 0.2s;
 
 }
 
 .fondblanc4{
-    width: 100%;
-    height:auto;
-    background-color:white;
-    padding: 1%;
-    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: 19rem;
+  flex-basis: 60%;
+  flex-grow: 1;
+  margin-top:2rem;
+  transition-duration: 0.2s;
 }
 
 /*dimensions images activités*/
 
 .grandeimage{
-    height: 650px;
-    width: 110%;
+    border-radius: 1rem 1rem 0 0;
+    height: 30rem;
     object-fit: cover;
-    border-radius: 20px ;   
-    margin-top: 30px;
-
-    display: flex;
-    
-    margin-left:3%;
-    margin-right: 3%;
+    width: 100%;
 }
 
 .moyimage{
-    height: 250px;
-    width: 50%;
-    object-fit: cover;
-    border-radius: 20px ;   
-    margin-top: 30px;
+    border-radius: 1rem 1rem 0 0;
+  height: 9rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 .moyimage2{
-    height: 250px;
-    width: 50%;
-    object-fit: cover;
-    border-radius: 20px ;   
-    margin-top: 30px;
+    border-radius: 1rem 1rem 0 0;
+  height: 11rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 .petiteimage{
-    height: 250px;
-    width: 29%;
-    object-fit: cover;
-    border-radius: 20px ;   
-    margin-top: 30px;
+    border-radius: 1rem 1rem 0 0;
+  height: 7.5rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 
