@@ -100,11 +100,11 @@ main{
 .a :hover{
     opacity: 1;
 }
+
 /*header*/
 .texteengras{
     font-weight: bold;
 }
-
 
 .borduresearch{
     width: 400px;
@@ -241,8 +241,6 @@ main{
     width: max-content;
   }
   
-
-
 /*icône info*/
 .info {
     display: flex;
@@ -272,7 +270,7 @@ main{
 
 .taillepopulaires{
     flex:1;
-    height: 750px;
+    height: 770px;
     margin-left: 20px;
     background-color: rgb(226, 224, 224);
     border-radius: 10px;
@@ -447,18 +445,15 @@ main{
 .blocdedroite{
     display: flex;
     flex-direction: row;
-    width:50%
+    width:50%;
+   
 }
-.blockpetitImg{
+
+.blocpetitImg{
     display: flex;
     flex-direction: column;
     width: 50%;
-}
-
-
-.blocdedroitecolonne{
-    display: flex;
-    flex-direction:row;
+    margin:20px;
 }
 
 /*fondblancs*/
@@ -500,7 +495,6 @@ main{
   width: 30rem;
   transition-duration: 0.2s;
   width: 100%
-
 }
 
 .fondblanc4{
@@ -510,7 +504,7 @@ main{
   display: flex;
   flex-direction: column;
   height: 10rem;
-  width: 19rem;
+  width: 28rem;
   flex-basis: 60%;
   flex-grow: 1;
   margin-top:2rem;
@@ -546,9 +540,6 @@ main{
   object-fit: cover;
   width: 100%;
 }
-
-
-
 
 /*footer*/
 footer{
