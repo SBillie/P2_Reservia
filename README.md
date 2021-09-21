@@ -26,3 +26,7 @@ Reservia est le projet numéro 2 de la formation Développeur web d'Openclassroo
 * Intégrer du contenu conformément à une maquette
 
 * Implémenter une interface responsive
+
+* Le code ne doit contenir aucune alrter au validateur W3C
+
+* Le site devra être compatible avec les dernières versions de Chrome et Firefox.
