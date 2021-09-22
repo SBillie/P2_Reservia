@@ -157,12 +157,7 @@ main{
     transform: scale(1.02);
     cursor: pointer;
   }
-
-  .filtername:hover {
-    background-color: #0065fc;
-    color: white;
-  }
-  
+ 
   .filter {
     margin-bottom: 1rem;
     margin-right: 1rem;
@@ -297,59 +292,48 @@ main{
     border-radius: 20px;
 }
 
+.carréshébergements :hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
 .carrés2hébergements{
     width: 90%;
-    
 }
-
 .imghébergements1{
-    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     width: 100%;
     height: 120px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
-
 }
 .imghébergements2{
-    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
     width: 100%;
     height: 120px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
 
 }.imghébergements3{
-    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
     width: 100%;
     height: 120px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
 
 }.imghébergements4{
-    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    width: 100%;
+     width: 100%;
     height: 120px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
-
-}.imghébergements5{
-    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+.imghébergements5{
     width: 100%;
     height: 120px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
 
 }
 .imghébergements6{
-    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
     width: 100%;
     height: 120px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
 
 }
@@ -387,34 +371,33 @@ main{
     border-radius: 20px;
    margin-bottom: 30px;
 }
+
+.carréspopulaires :hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
 .carrés2populaires{
     width: 60%;
     padding-left: 5%;
 }
 .imgpopulaires1{
-    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
     width: 35%;
     height: 160px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 15px 0 0 15px ;
 }
 
 .imgpopulaires2{
-    background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
     width: 35%;
     height: 160px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 0 0 15px ;
+    object-fit: cover;
 }
 
 .imgpopulaires3{
-    background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
     width: 35%;
     height: 160px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     border-radius: 15px 0 0 15px ;
 }
 
@@ -430,6 +413,8 @@ main{
     display : flex;
     flex-direction: column;
  }
+
+ 
  .BlocsImgActivités{
     display: flex;
     flex-direction: row;
@@ -509,6 +494,26 @@ main{
   flex-grow: 1;
   margin-top:2rem;
   transition-duration: 0.2s;
+}
+
+.fondblanc :hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.fondblanc2 :hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.fondblanc3 :hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.fondblanc4 :hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 /*dimensions images activités*/
