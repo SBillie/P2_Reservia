@@ -26,6 +26,7 @@ header,nav,main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
 }
 
 .flexcentre{
@@ -35,12 +36,7 @@ header,nav,main{
 }
 /*générales 2*/
 
-.flexcolumnaround{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 
-}
 
 .flexcolumnbetween{
     display: flex;
@@ -49,12 +45,6 @@ header,nav,main{
 
 }
 
-.flexcolumncentre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /*nav*/
 .img1{
@@ -249,12 +239,17 @@ header,nav,main{
 /*section hébergements*/
 
 .taillehébergements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex: 2;
     margin-right: 20px; 
     height: 750px;
     border-radius: 10px; 
     background-color:rgb(226, 224, 224);
     padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     
 }
 
@@ -266,25 +261,16 @@ header,nav,main{
     border-radius: 10px;
 }
 
-.blochébergements{
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.bloc1{
-    margin-bottom: 10px;
-}
-
-.bloc2{
-    margin-top: 10px;
-}
-
 .carréshébergements{
     width: 30%;
     height: auto;
     background-color: white;
     padding: 1%;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .carréshébergements :hover{
@@ -410,8 +396,7 @@ header,nav,main{
     flex-direction: column;
  }
 
- 
- .BlocsImgActivités{
+  .BlocsImgActivités{
     display: flex;
     flex-direction: row;
     width: 100%
@@ -548,30 +533,31 @@ footer{
     width: 100%;
     margin: 0;
     background-color: #f2f2f2;   
-    justify-content: center;
+    
     align-items:flex-start;
     font-size: 20px;
     padding: 20px 0 100px;
-    justify-content:space-between;
+     justify-content:left; 
     margin-top:30px;
 }
-
-
 .bloc{
     width: 15%;
     margin: 0 25px;
 }
 
-.blocapropos h4
-.blocnosherbegements h4
-.blocassistance h4{
-    font-size:25px;
-    padding-bottom: 20px;
+.blocfooter{
+    margin-right: 13%;
+    margin-left: 3%;
 }
 
-.listeapropos 
-.listenoshebergements 
-.listeassistance{
+.blocfooter h4
+{
+    font-size:25px;
+    padding-bottom: 20px;
+
+}
+
+.listefooter{
     list-style-type:none;
 }
 
@@ -584,5 +570,33 @@ footer{
     color:black;
 }
 
-/*responsive medias queries*/
+/*petit écran*/
 
+@media(max-width: 768px){
+    footer{
+        flex-direction: column;
+    }
+    .flexaround{
+        flex-direction: column-reverse;
+    }
+    .flexbetween{
+        flex-direction: column;
+    }
+
+}
+
+
+@media(min-width: 769px) and (max-width: 1199px){
+
+
+}
+
+
+
+/*responsive medias queries*/
+@media screen and (min-width: 1200px){
+    html{
+       
+    }
+}
+    
