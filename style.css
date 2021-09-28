@@ -572,7 +572,7 @@ footer{
 
 /*petit écran*/
 
-@media(max-width: 768px){
+@media (min-width:320px) and (max-width: 768px){
     footer{
         flex-direction: column;
     }
@@ -581,7 +581,39 @@ footer{
     }
     .flexbetween{
         flex-direction: column;
+        width: 100%;
     }
+    .filtrecontainer{
+        flex-direction: column;
+        margin-top: -55px;
+    }
+    .h1{
+        font-size:10px
+    }
+    .blocpopulaires{
+        margin-bottom: 20px;
+    }
+    .taillepopulaires{
+        width:96%;
+        border-radius: 0;
+    }
+    .taillehébergements{
+        border-radius:0;
+        width:100%;
+    }
+
+    .h3{
+        margin-right: 20px;
+        font: size 22px;
+    }
+
+   .carréshébergements{
+       width:90%;
+       margin-bottom: 25px;
+   }
+   .borduresearch{
+       width:100%;
+   }
 
 }
 
@@ -590,8 +622,6 @@ footer{
 
 
 }
-
-
 
 /*responsive medias queries*/
 @media screen and (min-width: 1200px){
