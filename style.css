@@ -369,7 +369,7 @@ header,nav,main{
     flex-direction: column;
  }
 
-  .BlocsImgActivités{
+.BlocsImgActivités{
     display: flex;
     flex-direction: row;
     width: 100%
@@ -395,6 +395,10 @@ header,nav,main{
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
+}
+
+h5{ 
+    margin-left: 3%;
 }
 
 /*carreImgactivites*/
@@ -425,7 +429,6 @@ header,nav,main{
   width : 100%
 
 }
-
 .carreImgactivites3{
     box-shadow: 0 0 16px #0000002e;
   border-radius: 1rem;
