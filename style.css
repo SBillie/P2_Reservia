@@ -1,5 +1,7 @@
 /*général*/
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
 html,body{
     font-family: raleway;
     
@@ -17,226 +19,223 @@ header,nav,main{
     width:96%
 }
 
-/*nav*/
-.navlogo{
-    margin-bottom: 7px;
-   
+*{
+    box-sizing: border-box;
+    font-family: "Raleway", "sans-serif";
 }
-.logo{
-    width: 25%;
 
+:root{
+    --bleu:#0065fc;
+    --lightgrey:#f2f2f2;
+    --lightblue:#deebff;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-.navmenu{
-    width: 45%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.navhebergementsactivitessinscrire{
-    width: 140px;
-    height: 99px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav li, a{
+a {
+    color:inherit;
     text-decoration: none;
-    cursor: pointer;
 }
-.a :hover{
-    opacity: 1;
-}
-.navbordure{
-    border-top: 1px solid; color: blue;
-    padding:30px
-   }
-.navactivitessinscrire{
-    border-top: 1px solid transparent;
-}
-.colorliens13{
+
+.hosting{
     color: #0065fc;
- 
+    font-weight: bold;
 }
-.colorliens2{
-    color: black;
+
+.hosting2{
+    color: var(--bleu);
+    font-weight: bold;
 }
+
+#logo{
+    margin-top:8px;  
+    margin-right: auto;
+    padding: 0 32px;
+    height: 45px;
+}
+
+/*nav*/
+/*********** NAV-BAR ***************************/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+nav a{
+    padding: 32px;
+    border-top: 3px solid transparent;
+}
+
+nav a:hover{
+    border-top-color: #0065fc;
+}
+
+.sub-nav{
+    display: flex;
+}
+
+.sub-nav :hover{
+    color: #0065fc;
+}
+
 
 /*header*/
 
-.textehébergements{
-    font-weight: bold;
-}
-.borduresearch{
-    width: 400px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.iconsearch{
-    height:50px;
-    width: 50px;
-    background-color: grey;
-    border-radius: 10px 0 0 10px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.search{
-    height:50px;
-    width:230px;
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
-    border: 0.5px solid #f2f2f2;
-    padding-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.buttonsearch{
-    background-color: blue;
-    height: 50px;
-    width: 120px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 0 10px 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/************* BODY ***********************************/
+
+.wrapper{
+    padding: 0 32px;
 }
 
-/*filtres*/
-.filtrecontainer{
+/* SEARCHBAR */
+
+.wrapper h1,
+.wrapper p{
+    margin-bottom:12px;
+}
+
+.search-button{
     display: flex;
-    margin-top: 3rem;
-    flex-direction: column;
+    align-items: center;
+   
+}
+
+.search-button > *{
+    padding: 16px 19px;
+}
+.search-button i {
+    background-color: var(--lightgrey);
+    border-radius: 16px 0 0 16px;
+}
+
+.search-button input{
+    padding-right:48px;
+    border:0.5px solid var(--lightgrey);
+    overflow: auto;
+}
+
+.search-button input::placeholder{
+    font-weight: bold;
+    color: inherit;
+    font-size: 16px;
+}
+
+.search-button button{
+    background-color: var(--bleu);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 16px 16px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 150ms;
+}
+
+.search-button button:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.fas.fa-search{
+    display: none;
+}
+
+
+
+/*************** FILTERS ****************/
+
+.filters-list{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    flex-wrap: wrap;
 }
 
 .filters{
+    border: 2px solid var(--lightgrey);
+    border-radius: 32px;
     display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    align-items: center;
 }
 
-.blocfilters{
-    margin-right: 20px;
-    width: 100%;
+.fas.fa-money-bill-wave{
+    color: var(--bleu);
+    background-color: var(--lightblue);
+    width: 48px;
+    height:48px;
+    border-radius: 50%;
+    margin: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fas.fa-child{
+    color: var(--bleu);
+    background-color: var(--lightblue);
+    width: 48px;
+    height:48px;
+    border-radius: 50%;
+    margin: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fas.fa-heart{
+    color: var(--bleu);
+    background-color: var(--lightblue);
+    width: 48px;
+    height:48px;
+    border-radius: 50%;
+    margin: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.filter:hover {
-    transform: scale(1.02);
+.fas.fa-dog{
+    color: var(--bleu);
+    background-color: var(--lightblue);
+    width: 48px;
+    height:48px;
+    border-radius: 50%;
+    margin: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filters span{
+    font-weight: bold;
+    padding: 0 16px;
     cursor: pointer;
-  }
-  
-  .filter {
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    transition-duration: 0.2s;
-  }
-    .filtericons {
-    background-color: #deebff;
-    border-radius: 100%;
-    height: 3.2rem;
-    width: 3.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #0065fc;
-    position: absolute;
-  }
-
-  .blocfilters{
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    display: flex;
+    transition-duration: 200ms;
+      
 }
 
-  .eco {
-    padding: 1rem 1rem 1rem 4rem;
-    border-top: #eeeeee solid 3px;
-    border-bottom: #eeeeee solid 3px;
-    border-left: none;
-    border-right: #eeeeee solid 3px;
-    border-radius: 2rem 2rem 2rem 2rem;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    font-weight: bold;
-    text-align: right;
-  }
-  
-  .fam {
-    padding: 1rem 1rem 1rem 4rem;
-    border-top: #eeeeee solid 3px;
-    border-bottom: #eeeeee solid 3px;
-    border-left: none;
-    border-right: #eeeeee solid 3px;
-    border-radius: 2rem 2rem 2rem 2rem;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    font-weight: bold;
-    text-align: right;
-  }
-  
-  .rom {
-    padding: 1rem 1rem 1rem 4rem;
-    border-top: #eeeeee solid 3px;
-    border-bottom: #eeeeee solid 3px;
-    border-left: none;
-    border-right: #eeeeee solid 3px;
-    border-radius: 2rem 2rem 2rem 2rem;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    font-weight: bold;
-    text-align: right;
-  }
-  
-  .ani {
-    padding: 1rem 1rem 1rem 4rem;
-    border-top: #eeeeee solid 3px;
-    border-bottom: #eeeeee solid 3px;
-    border-left: none;
-    border-right: #eeeeee solid 3px;
-    border-radius: 2rem 2rem 2rem 2rem;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    font-weight: bold;
-    text-align: right;
-    width: max-content;
-  }
-  
-/*icône info*/
-.info {
+.filters:hover{
+    background-color:var(--lightblue);
+    transform: scale(1.02);
+}
+
+/************** SEARCH-RESULT************** */
+.search-result{
     display: flex;
     align-items: center;
+    gap:16px;   
 }
-.infoicon{
-    border:2px solid #f2f2f2;
-    width: 20px;
-    height: 20px;
-    border-radius: 25px;
-    margin-right: 0.5%;
-    color:#0065fc;
+
+.fas.fa-info{
+    border: 2px solid var(--lightgrey);
+    border-radius: 50%;
+    color:var(--bleu);
+    width: 32px;
+    height: 32px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;   
+       
 }
+
 
 /*section hébergements*/
 
@@ -294,19 +293,19 @@ header,nav,main{
 }
 
 /*icônes étoiles*/
-.star{
+.blue{
     color: #0065fc;
     
 }
 
-.color{
+.grey{
     color: #f2f2f2;
 }
 /*populaires*/
 
 .populaires{
     flex:1;
-    height: 770px;
+    height: 754px;
     margin-left: 20px;
     background-color: rgb(226, 224, 224);
     border-radius: 10px;
@@ -320,6 +319,7 @@ header,nav,main{
     justify-content: space-between;
     align-items: center;
     margin-top:10px;
+    margin-bottom: 12%;
 }
 
 .blocImgpopulaires{
@@ -350,7 +350,7 @@ header,nav,main{
     padding-left: 5%;
 }
 .imgpopulaires{
-    width: 35%;
+    width: 40%;
     height: 160px;
     object-fit: cover;
     border-radius: 15px 0 0 15px ;
@@ -358,7 +358,23 @@ header,nav,main{
 
 /*Activités*/
 
-/*BlocImgActivtés*/
+#Activités{
+    display: grid;
+    column-gap: 2rem;
+    margin: 4rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .ActivitésMarseille{
     margin-top: 50px;
@@ -397,8 +413,14 @@ header,nav,main{
     margin-bottom: 2%;
 }
 
-h5{ 
+#Activités h4{ 
+        font-size: x-large
+}
+
+#Activités h5{
     margin-left: 3%;
+    font-weight: bold;
+    font-size: large;
 }
 
 /*carreImgactivites*/
@@ -423,7 +445,6 @@ h5{
   height: 13rem;
   width: 19rem;
   flex-basis: 60%;
-  flex-grow: 1;
   margin-bottom:4rem;
   transition-duration: 0.2s;
   width : 100%
@@ -481,6 +502,7 @@ h5{
     height: 30rem;
     object-fit: cover;
     width: 100%;
+    height:84%;
 }
 
 .moyimage{
@@ -503,6 +525,7 @@ h5{
   object-fit: cover;
   width: 100%;
 }
+    
 
 /*footer*/
 footer{
@@ -510,7 +533,6 @@ footer{
     width: 100%;
     margin: 0;
     background-color: #f2f2f2;   
-    
     align-items:flex-start;
     font-size: 20px;
     padding: 20px 0 100px;
@@ -547,70 +569,48 @@ footer{
     color:black;
 }
 
-/*petit écran*/
 
-@media (min-width : 370px) 
-    and (max-width : 667px){
+/***************mobile responsive *************/
 
-        .blocfilters{
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: wrap;
-            display: flex;
-        }
-    
-    html,main,body{
-        margin:0;
-        width: 100%;
-        margin: 0;
-    }
-    .navbar{
-        width: 100%;
+
+@media (max-width: 653px){
+
+    .sub-nav{
+        order:2;
     }
 
-   .navmenu{
-       flex-direction: column-reverse;
-   }
-   .navlogo{
-       height:40px;
-       margin-left: 15px;
-   }
-   .header{
-       flex-direction: column;
+    .hosting2{
+        order: 1;
        
-   }
-   .textehebergement {
-    font-size: small;
-    margin-left: 15px;
-}
-
-    .borduresearch {
-    width: 100%;
-    margin: 15px 10px;
-}
-
-    .info {
-     margin-left: 15px;
     }
 
-    #Hebergements{
-        flex-direction: column-reverse;
+    .fas.fa-search{
+        background-color: inherit;
+        display: inline;
+    }   
+
+    .search-text{
+        display: none;
     }
 
-    .BlocsImgActivités{flex-direction: column;}
-    .blocdegauche{flex-direction: column;}
-    .blocdedroite{flex-direction: column;}
-
-    footer{
-        flex-direction: column;
-        padding-right:400px;
+   .sub-nav a{
+        flex-basis: 50%;
+        text-align:center;
     }
-    
+        
+    .sub-nav a:hover{
+        border-top-color:transparent;
+        border-bottom:4px solid #0065fc
+    }
+    .search-button .search-text{
+        display: none;
+    }
 }
-
-
-@media(min-width: 769px) and (max-width: 1199px){
-
-
-}
-   
+    @media screen and (max-width:1300px){
+        
+        footer{
+            flex-direction: column;
+        }
+        
+        
+    }
