@@ -47,7 +47,7 @@ a {
 #logo{
     margin-top:8px;  
     margin-right: auto;
-    padding: 0 32px;
+    padding: 0 7px;
     height: 45px;
 }
 
@@ -237,7 +237,7 @@ nav a:hover{
 }
 
 
-/*section hébergements*/
+/**********************section hébergements************************/
 
 #Hebergements{
     display: flex;
@@ -278,7 +278,7 @@ nav a:hover{
     align-items: center;
 }
 .blochebergements :hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -358,24 +358,6 @@ nav a:hover{
 
 /*Activités*/
 
-#Activités{
-    display: grid;
-    column-gap: 2rem;
-    margin: 4rem 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ActivitésMarseille{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -389,19 +371,6 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     width: 100%
-}
-
-.blocdegauche{
-    display: flex;
-    flex-direction: row;
-    width: 50%
-}
-
-.blocdedroite{
-    display: flex;
-    flex-direction: row;
-    width:50%;
-   
 }
 
 .blocpetitImg{
@@ -426,52 +395,45 @@ nav a:hover{
 /*carreImgactivites*/
 .carreImgactivites{
     box-shadow: 0 0 16px #0000002e;
-    border-radius: 1rem;
-    background-color: white;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     transition-duration: 0.2s;
     margin-left: 1%;
     margin-right: 1%;
-    width: 480px;
-    
+    width: 50%;
+    height: 564px;
 }
+
 .carreImgactivites2{
     box-shadow: 0 0 16px #0000002e;
-  border-radius: 1rem;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: 13rem;
-  width: 19rem;
-  flex-basis: 60%;
-  margin-bottom:4rem;
-  transition-duration: 0.2s;
-  width : 100%
-
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+     width: 17%;
+    margin-bottom: 56px;
+    transition-duration: 0.2s;
+    width: 386px;
 }
+
 .carreImgactivites3{
     box-shadow: 0 0 16px #0000002e;
-  border-radius: 1rem;
-  background-color: white;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
-  max-height: 15rem;
-  width: 30rem;
+  max-height: 240px;
+  width: 480px;
   transition-duration: 0.2s;
   width: 100%
 }
 
 .carreImgactivites4{
     box-shadow: 0 0 16px #0000002e;
-  border-radius: 1rem;
-  background-color: white;
-  display: flex;
+  border-radius: 16px;
+   display: flex;
   flex-direction: column;  
   width: 100%;
-  flex-basis: 60%;
-  flex-grow: 1;
-  margin-bottom: 16%;
+  margin-bottom: 14%;
   transition-duration: 0.2s;
 }
 
@@ -498,30 +460,30 @@ nav a:hover{
 /*dimensions images activités*/
 
 .grandeimage{
-    border-radius: 1rem 1rem 0 0;
-    height: 30rem;
+    border-radius: 16px 16px 0 0;
+    height: 480px;
     object-fit: cover;
     width: 100%;
     height:84%;
 }
 
 .moyimage{
-    border-radius: 1rem 1rem 0 0;
-  height: 9rem;
+    border-radius: 16px 16px 0 0;
+    height: 192px;
   object-fit: cover;
   width: 100%;
 }
 
 .moyimage2{
-    border-radius: 1rem 1rem 0 0;
-  height: 11rem;
+    border-radius: 16px 16px 0 0;;
+  height: 160px;
   object-fit: cover;
   width: 100%;
 }
 
 .petiteimage{
-    border-radius: 1rem 1rem 0 0;
-  height: 11rem;
+    border-radius: 16px 16px 0 0;
+  height: 176px;
   object-fit: cover;
   width: 100%;
 }
