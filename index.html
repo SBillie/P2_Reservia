@@ -20,14 +20,14 @@
     
      <body>
          <header>
-       <!-- NAVBAR -->
+             <!-- NAVBAR -->
         <nav>
             <img id="logo" src="images/logo/Reservia@3x.png" alt="logo bleu Reservia">
             <div class="sub-nav">
-                <a class="hosting" href="#">Hebergements</a>
+                <a class="navlink" href="#">Hebergements</a>
                 <a href="#">Activites</a>
             </div>
-           <a class="hosting2" href="#"><strong>S'inscrire</strong></a>
+           <a class="signup" href="#"><strong>S'inscrire</strong></a>
         </nav>
 
     </header>
@@ -43,6 +43,8 @@
             <div class="search-button">
               <i class="fas fa-map-marker-alt"></i>
             <input type="text" placeholder="Marseille, France" size="25">
+
+            <!-- AJOUT DE L'ICONE LOUPE -->
             <button><span class="search-text">Rechercher</span><i class="fas fa-search"></i></button>
             </div>
        
@@ -77,9 +79,12 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
 
+                <!-- HERGEMENTS A MARSEILLE -->
+
             <section id="Hebergements">
                 <div class="gdblochebergements">
-                    <div class="textehbergements text"><h2>Hebergements à Marseille</h2></div>
+                    <div id="ancrehebergements">
+                        <a><h2>Hebergements à Marseille</h2></a></div>
                     <div class="blochebergements">
                         <div class="carreshebergements">
                             <img class="imghébergements" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
@@ -185,7 +190,7 @@
                     <a href="#"><strong>Afficher plus</strong></a>
                 </div>
                
-
+               <!-- LES PLUS POPULAIRES -->
                 <div class="populaires">
                     <div class="textepopulaires">
                         <h4>Les plus populaires</h4>
@@ -240,11 +245,12 @@
                             </div>
                         </div>
                     </div>
-                        
+                    
                 </div> 
             </div>
                         
             </section>
+                        <!-- ACTIVITES A MARSEILLE -->
 
             <section id="Activités">
                 <h4>Activités à Marseille</h4>
@@ -271,14 +277,12 @@
                                                             <h5>Iles du Frioul</h5>
                             </div>
                             
-                    </div>    
-                    
-                
-                
+                    </div>                       
+                               
 
                     <div class="carreImgactivites"><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                                                     alt="photo avec vue sur les montagnes" class="grandeimage">
-                                                    <h5>Parc ational des Calanques</h5></div>
+                                                    <h5>Parc National des Calanques</h5></div>
 
                      <div class="blocpetitImg">
                     <div class="carreImgactivites4"><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -290,15 +294,15 @@
                                                     <h5>Parc Longchamp</h5></div>
 
                     </div>
-                    
-            
-             </div>
-
+                     </div>
+                                  
             
             </section>
         </main>
 
         <footer >
+
+              <!-- FOOTER -->
                            <div class="blocfooter">
                     <h4>A propos</h4>
                     <div class="listefooter">
@@ -332,5 +336,4 @@
         </footer>
         
     </body>
-
 </html>

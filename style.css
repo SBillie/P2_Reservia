@@ -1,4 +1,4 @@
-/*général*/
+/***********GENERAL***********/
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -13,10 +13,10 @@ body{
     display:flex;
     flex-direction: column;
 }
-header,nav,main{
+header,nav{
     margin-right: 2%;
-    margin-left:2%;
-    width:96%
+    margin-left:1%;
+    width:99%
 }
 
 *{
@@ -34,22 +34,7 @@ a {
     text-decoration: none;
 }
 
-.hosting{
-    color: #0065fc;
-    font-weight: bold;
-}
 
-.hosting2{
-    color: var(--bleu);
-    font-weight: bold;
-}
-
-#logo{
-    margin-top:8px;  
-    margin-right: auto;
-    padding: 0 7px;
-    height: 45px;
-}
 
 /*nav*/
 /*********** NAV-BAR ***************************/
@@ -65,6 +50,23 @@ nav a{
     border-top: 3px solid transparent;
 }
 
+.navlink{
+    color: #0065fc;
+    font-weight: bold;
+}
+
+.signup{
+    color: var(--bleu);
+    font-weight: bold;
+}
+
+#logo{
+    margin-top:8px;  
+    margin-right: auto;
+    padding: 0 7px;
+    height: 45px;
+}
+
 nav a:hover{
     border-top-color: #0065fc;
 }
@@ -78,15 +80,15 @@ nav a:hover{
 }
 
 
-/*header*/
+/***************HEADER*************************/
 
-/************* BODY ***********************************/
+/************* BODY ************************/
 
 .wrapper{
     padding: 0 32px;
 }
 
-/* SEARCHBAR */
+/*************** SEARCHBAR ****************/
 
 .wrapper h1,
 .wrapper p{
@@ -236,8 +238,7 @@ nav a:hover{
        
 }
 
-
-/**********************section hébergements************************/
+/**********************SECTION HEBERGEMENTS************************/
 
 #Hebergements{
     display: flex;
@@ -259,6 +260,12 @@ nav a:hover{
     padding-left: 20px;
     
 }
+
+.ancrehebergements h2{
+    font-size: 25px;
+}
+
+
 .blochebergements{
     display: flex;
     justify-content: space-between;
@@ -270,6 +277,8 @@ nav a:hover{
     width: 30%;
     height: auto;
     background-color: white;
+    /* rajout propriété pour la version mobile et desktop */
+    box-shadow: 0 0 16px #0000002e;
     padding: 1%;
     border-radius: 20px;
     display: flex;
@@ -292,7 +301,7 @@ nav a:hover{
     border-radius: 15px 15px 0 0;
 }
 
-/*icônes étoiles*/
+/****************ICONES ETOILES*******************/
 .blue{
     color: #0065fc;
     
@@ -301,9 +310,11 @@ nav a:hover{
 .grey{
     color: #f2f2f2;
 }
-/*populaires*/
+/****************LES PLUS POPULAIRES*************/
 
 .populaires{
+    display:flex;
+    flex-direction: column;
     flex:1;
     height: 754px;
     margin-left: 20px;
@@ -319,7 +330,12 @@ nav a:hover{
     justify-content: space-between;
     align-items: center;
     margin-top:10px;
-    margin-bottom: 12%;
+    margin-bottom: 6%;
+}
+
+.textepopulaires h4{
+    font-size: x-large;
+    margin-top: 16px;
 }
 
 .blocImgpopulaires{
@@ -334,8 +350,8 @@ nav a:hover{
     height: auto;
     padding: 1% 0 1% 1%;
     border-radius: 20px;
-   margin-bottom: 30px;
-   display: flex;
+    margin-bottom: 30px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -356,16 +372,7 @@ nav a:hover{
     border-radius: 15px 0 0 15px ;
 }
 
-/*Activités*/
-
-.ActivitésMarseille{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height:100%;
-    width: 100%;
-    display : flex;
-    flex-direction: column;
- }
+/******************ACTIVITES A MARSEILLE***********************/
 
 .BlocsImgActivités{
     display: flex;
@@ -392,18 +399,17 @@ nav a:hover{
     font-size: large;
 }
 
-/*carreImgactivites*/
+/************carreImgactivites************/
 .carreImgactivites{
     box-shadow: 0 0 16px #0000002e;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 85px;
     transition-duration: 0.2s;
-    margin-left: 1%;
-    margin-right: 1%;
-    width: 50%;
-    height: 564px;
+    width: 100%;
 }
+
 
 .carreImgactivites2{
     box-shadow: 0 0 16px #0000002e;
@@ -411,30 +417,32 @@ nav a:hover{
     display: flex;
     flex-direction: column;
      width: 17%;
-    margin-bottom: 56px;
+    margin-bottom: 61px;
     transition-duration: 0.2s;
     width: 386px;
 }
 
 .carreImgactivites3{
     box-shadow: 0 0 16px #0000002e;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  max-height: 240px;
-  width: 480px;
-  transition-duration: 0.2s;
-  width: 100%
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-bottom: 56px;
+    transition-duration: 0.2s;
+    width: 386px;
 }
+
 
 .carreImgactivites4{
     box-shadow: 0 0 16px #0000002e;
-  border-radius: 16px;
-   display: flex;
-  flex-direction: column;  
-  width: 100%;
-  margin-bottom: 14%;
-  transition-duration: 0.2s;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-bottom: 56px;
+    transition-duration: 0.2s;
+    width: 386px;
 }
 
 .carreImgactivites :hover{
@@ -457,7 +465,7 @@ nav a:hover{
     cursor: pointer;
 }
 
-/*dimensions images activités*/
+/*************DIMENSIONS IMAGES ACTIVITES***************/
 
 .grandeimage{
     border-radius: 16px 16px 0 0;
@@ -470,26 +478,26 @@ nav a:hover{
 .moyimage{
     border-radius: 16px 16px 0 0;
     height: 192px;
-  object-fit: cover;
-  width: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .moyimage2{
     border-radius: 16px 16px 0 0;;
-  height: 160px;
+        height: 160px;
   object-fit: cover;
-  width: 100%;
+    width: 100%;
 }
 
 .petiteimage{
     border-radius: 16px 16px 0 0;
-  height: 176px;
-  object-fit: cover;
-  width: 100%;
+    height: 176px;
+    object-fit: cover;
+    width: 100%;
 }
     
 
-/*footer*/
+/***********************FOOTER***********************/
 footer{
     display: flex;
     width: 100%;
@@ -531,31 +539,36 @@ footer{
     color:black;
 }
 
+/************** responsive mobile et TABLETTE*****************/
 
-/***************mobile responsive *************/
 
-
-@media (max-width: 653px){
-
-    .sub-nav{
-        order:2;
+@media screen and (max-width:600px){
+    .sub-nav {
+        order: 2;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        align-items: center;
     }
 
-    .hosting2{
+    .signup{
         order: 1;
-       
+        width: auto;
+        margin: auto;
+    }
+}
+@media screen and (max-width:992px){
+
+    /* responsive header */
+    .header{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
     }
 
-    .fas.fa-search{
-        background-color: inherit;
-        display: inline;
-    }   
+    /* responsive navbar */
 
-    .search-text{
-        display: none;
-    }
-
-   .sub-nav a{
+    .sub-nav a{
         flex-basis: 50%;
         text-align:center;
     }
@@ -564,15 +577,125 @@ footer{
         border-top-color:transparent;
         border-bottom:4px solid #0065fc
     }
+
+    
+
+    .fas.fa-search{
+        background-color: inherit;
+        display: inline;
+    }   
+
     .search-button .search-text{
         display: none;
     }
+
+    .wrapper{
+        margin-top: 22px;
+        padding: 0;
+    }
+    /* responsive mobile les plus populaires */
+   .populaires{
+    order: 1;
+    flex: none;
+    width: 90%;
+   }
+   /* responsive mobile Hebergements a Marseille */
+
+   #Hebergements{
+    flex-direction: column;
+    width: 100%;
 }
-    @media screen and (max-width:1300px){
+
+.gdblochebergements{
+    order:2;
+    margin-top: 40px;
+    flex: none;
+    width: 100%;
+    margin-left: auto;
+}
+
+.populaires{
+    order:1;
+    width: 100%;
+    margin-left: auto;
+    border-radius: 0;
+}
+
+.textepopulaires{
+    margin-bottom: 1%;
+}
+
+   .gdblochebergements{
+       height: auto;
+       background-color: transparent;
+      
+}
+
+   .blochebergements{
+       flex-direction: column;
+       margin-bottom:0;
+       
+   }
+
+     .carreshebergements{
+       width: 100%;
+       margin-bottom: 20px;
+   }
+    /* responsive mobile Activites a Marseille */
+
+   .BlocsImgActivités{
+       flex-direction: column;
+       height: auto;
+   }
+
+   .BlocsImgActivités div{
+       width: 100%;
+    }
+
+    .carreImgactivites{
+        margin-bottom: 50px;
         
-        footer{
-            flex-direction: column;
-        }
-        
+       
+    }
+
+    .carreImgactivites2{
+        margin-bottom: 50px;
+        height: auto;
         
     }
+
+    .carreImgactivites3{
+        margin-bottom: 50px;
+        height: auto;
+        
+    }
+
+    .carreImgactivites4{
+        margin-bottom: 50px;
+        height: auto;
+        
+    }
+
+    .carreImgactivites{
+        height: 276px;
+       
+    }
+
+    .carreImgactivites img{
+        height: 76%;
+    }
+    .carreImgactivites234{
+        height: 150px;
+    }
+  
+     /* responsive mobile footer */
+    footer{
+        flex-direction: column;
+    }
+
+}
+
+   
+
+/* RESPONSIVE ORDINATEUR */
+
