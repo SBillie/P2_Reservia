@@ -606,7 +606,7 @@ footer{
     width: 100%;
 }
 
-.gdblochebergements{
+    .gdblochebergements{
     order:2;
     margin-top: 40px;
     flex: none;
@@ -614,14 +614,14 @@ footer{
     margin-left: auto;
 }
 
-.populaires{
+    .populaires{
     order:1;
     width: 100%;
     margin-left: auto;
     border-radius: 0;
 }
 
-.textepopulaires{
+    .textepopulaires{
     margin-bottom: 1%;
 }
 
@@ -646,6 +646,10 @@ footer{
    .BlocsImgActivités{
        flex-direction: column;
        height: auto;
+   }
+
+   #Activités h4{
+       margin-left: 12px;
    }
 
    .BlocsImgActivités div{
