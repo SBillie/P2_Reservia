@@ -50,7 +50,7 @@ nav a{
     border-top: 3px solid transparent;
 }
 
-.navlink{
+.ancrehebergements{
     color: #0065fc;
     font-weight: bold;
 }
@@ -389,11 +389,11 @@ nav a:hover{
     margin-bottom: 2%;
 }
 
-#Activités h4{ 
+#Activites h4{ 
         font-size: x-large
 }
 
-#Activités h5{
+#Activites h5{
     margin-left: 3%;
     font-weight: bold;
     font-size: large;
@@ -578,8 +578,6 @@ footer{
         border-bottom:4px solid #0065fc
     }
 
-    
-
     .fas.fa-search{
         background-color: inherit;
         display: inline;
@@ -648,8 +646,8 @@ footer{
        height: auto;
    }
 
-   #Activités h4{
-       margin-left: 12px;
+   #Activites h4{
+       margin-left: 3%;
    }
 
    .BlocsImgActivités div{
