@@ -301,6 +301,10 @@ nav a:hover{
     border-radius: 15px 15px 0 0;
 }
 
+#Hebergement a{
+    font-size: 25px;
+}
+
 /****************ICONES ETOILES*******************/
 .blue{
     color: #0065fc;
